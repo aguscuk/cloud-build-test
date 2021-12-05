@@ -15,7 +15,7 @@
 # [START cloudbuild_quickstart_build]
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1', '.' ]
+  args: [ 'build', '-t', 'asia-southeast2-docker.pkg.dev/$PROJECT_ID/quickstart/quickstart-image:tag1', '.' ]
 images:
-- '$LOCATION-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'asia-southeast2-docker.pkg.dev/$PROJECT_ID/quickstart/quickstart-image:tag1'
 # [END cloudbuild_quickstart_build]
